@@ -14,7 +14,17 @@ class MenuItem {
   });
 }
 
-const MunuItems = <MenuItem>[
-  MenuItem(title: 'Botões', subtitle: 'Alguns Botões de Flutter', link: '/buttons', icon: Icons.smart_button_outlined),
-  MenuItem(title: 'Cardes', subtitle: 'Um Card de Flutter', link: '/cards', icon: Icons.credit_card),
+const appMenuItems = <MenuItem>[
+  MenuItem(
+    title: 'Botões',
+    subtitle: 'Alguns Botões de Flutter',
+    link: '/buttons',
+    icon: Icons.smart_button_outlined,
+  ),
+  MenuItem(
+    title: 'cards',
+    subtitle: 'Um Card de Flutter',
+    link: '/cards',
+    icon: Icons.credit_card,
+  ),
 ];
