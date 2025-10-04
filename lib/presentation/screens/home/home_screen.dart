@@ -1,6 +1,4 @@
 import 'package:collectionn_widgets/config/menu/menu_item.dart';
-import 'package:collectionn_widgets/presentation/screens/buttons/buttons_screen.dart';
-import 'package:collectionn_widgets/presentation/screens/cards/cards_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -11,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Componentes Flutter')),
+      appBar: AppBar(title: const Text('Lembretes de componentes - Neri')),
       body: _HomeView(),
     );
   }
@@ -33,9 +31,8 @@ class _HomeView extends StatelessWidget {
 }
 
 class _CustomListTitle extends StatelessWidget {
-  const _CustomListTitle({required this.menuItem});
-
   final MenuItem menuItem;
+  const _CustomListTitle({required this.menuItem});
 
   @override
   Widget build(BuildContext context) {
