@@ -164,6 +164,7 @@ class _CardType4 extends StatelessWidget {
     final color = Theme.of(context).colorScheme;
     return Card(
       elevation: elevation,
+      clipBehavior: Clip.hardEdge, //Aredondar as bordas
       child: Stack(
         children: [
           Image.network(
@@ -173,9 +174,17 @@ class _CardType4 extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.topRight,
-            child: IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.more_vert_outlined),
+            child: Container(
+              decoration: BoxDecoration(
+                color: color.secondaryFixedDim,
+                borderRadius: const BorderRadius.only(
+                  bottomLeft: Radius.circular(20),
+                ),
+              ),
+              child: IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.more_vert_outlined),
+              ),
             ),
           ),
         ],
