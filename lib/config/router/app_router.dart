@@ -9,7 +9,7 @@ final appRouter = GoRouter(
       path: '/',
       name: HomeScreen.name,
       builder: (context, state) => HomeScreen(),
-    ), //Alternativa, rotas nomeadas.
+    ),
     GoRoute(
       path: '/buttons',
       name: ButtonsScreen.name,
