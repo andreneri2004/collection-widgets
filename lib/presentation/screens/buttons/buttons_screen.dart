@@ -100,8 +100,6 @@ class _ButtonsView extends StatelessWidget {
 }
 
 class _CustomButtom extends StatelessWidget {
-  const _CustomButtom({super.key});
-
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
@@ -111,9 +109,7 @@ class _CustomButtom extends StatelessWidget {
       child: Material(
         color: colors.primary,
         child: InkWell(
-          onTap: () {
-            print('Click');
-          },
+          onTap: () {},
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Text(

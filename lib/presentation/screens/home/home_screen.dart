@@ -16,8 +16,6 @@ class HomeScreen extends StatelessWidget {
 }
 
 class _HomeView extends StatelessWidget {
-  const _HomeView({super.key});
-
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
