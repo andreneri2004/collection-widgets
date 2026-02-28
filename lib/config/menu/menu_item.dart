@@ -16,6 +16,12 @@ class MenuItem {
 
 const appMenuItems = <MenuItem>[
   MenuItem(
+    title: 'Contador',
+    subtitle: 'Contador com o Riverpod',
+    link: '/counter_river',
+    icon: Icons.control_point_duplicate_rounded,
+  ),
+  MenuItem(
     title: 'Animações',
     subtitle: 'Animações de Flutter',
     link: '/animated',
@@ -62,5 +68,11 @@ const appMenuItems = <MenuItem>[
     subtitle: 'Um UI Controls de Flutter',
     link: '/ui_controls',
     icon: Icons.settings,
+  ),
+  MenuItem(
+    title: 'Mudança de Tema',
+    subtitle: 'Um Mudança de Tema de Flutter',
+    link: '/theme_changer',
+    icon: Icons.palette_outlined,
   ),
 ];

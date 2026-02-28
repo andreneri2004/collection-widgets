@@ -6,6 +6,11 @@ final appRouter = GoRouter(
   initialLocation: '/',
   routes: [
     GoRoute(
+      path: '/counter_river',
+      name: CounterScreen.name,
+      builder: (context, state) => const CounterScreen(),
+    ),
+    GoRoute(
       path: '/',
       name: HomeScreen.name,
       builder: (context, state) => HomeScreen(),
@@ -44,6 +49,11 @@ final appRouter = GoRouter(
       path: '/snackbar',
       name: SnackbarScreen.name,
       builder: (context, state) => const SnackbarScreen(),
+    ),
+    GoRoute(
+      path: '/theme_changer',
+      name: ThemeChangerScreen.name,
+      builder: (context, state) => const ThemeChangerScreen(),
     ),
     GoRoute(
       path: '/ui_controls',
