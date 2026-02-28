@@ -9,15 +9,13 @@ void main() => runApp(ProviderScope(child: MyApp()));
 class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final selectColor = ref.watch(selectedColorProvider);
-    final isDarkmode = ref.watch(isDarkProvider);
+    // final selectColor = ref.watch(selectedColorProvider);
+    // final isDarkmode = ref.watch(isDarkProvider);
+    final AppTheme appTheme = ref.watch(themeNotifierProvider);
     return MaterialApp.router(
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(
-        selectedColor: selectColor,
-        isDarkmode: isDarkmode,
-      ).getTheme(),
+      theme: appTheme.getTheme(),
       title: 'Collection Widgets',
     );
   }
